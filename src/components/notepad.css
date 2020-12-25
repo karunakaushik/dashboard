@@ -1,0 +1,45 @@
+.notepadbox{
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+
+}
+.noteslist{
+    display: flex;
+    padding: 5px;
+}
+.noteslist li {
+    list-style-type: none;
+    color: #B0B0B0;
+    font-size: 15px;
+}
+.heading{
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+}
+.inputbox{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none !important;
+}
+
+.inputdivbox{
+    display: flex;
+}
+.addbtn{
+    cursor: pointer;
+    background: #FF6C40;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    color: white;
+    outline: none !important;
+}

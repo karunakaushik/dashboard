@@ -1,0 +1,27 @@
+.sidecont{
+    display: flex;
+    background-color: #FF6C40;
+    flex-direction: column;
+    width: 100%;
+}
+.sidebox1{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.sidebox{
+    /* font-family: SF Pro Display;; */
+    background-color: #FFC480;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
