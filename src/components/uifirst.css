@@ -13,6 +13,8 @@
     display: flex;
     width: 80%;
     flex-direction: column;
+    overflow: auto;
+    height: 100vh;
 }
 
 .maincontainer{
@@ -87,9 +89,9 @@
 
 }
 
-.noticeuifirst{
+/* .noticeuifirst{ */
     /* width: 20%; */
-}
+/* } */
 .lowerouterdiv{
     display: flex;
 }

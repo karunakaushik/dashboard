@@ -4,6 +4,7 @@ import PostIcon from './image/post.png'
 import UserPic from './image/user.png'
 import AttachIcon from './image/Vector.png'
 import Senddrop from './image/Vector 2.png'
+import { useFileUpload } from "use-file-upload";
 const Postpage = () => {
 
     const [inputlist, setinputlist] = useState("");
@@ -18,28 +19,45 @@ const Postpage = () => {
             return [...oldposts, inputlist];
         });
         setinputlist(' ');
+        
     }
 
     const cancelPost = () => {
         setinputlist(' ');
+        // selectFiles();
+
     }
+
+    const [files, selectFiles] = useFileUpload();
+
         return(
             <div className="postbox">
-                {/* <br /> */}
                 <div className="inputdivbox">
-                {/* <label> Title </label> */}
                 <div className="innerinputbox">
                     <input className="inputpostbox" type="text" placeholder="Share something with your class.." value={inputlist} onChange={addPost} />
+                    {/* <img src={files ?.source} style={{width:'50px', height:'20px'}} alt="" /> */}
 
                </div>
+
                <div className="allbtndiv">
                      <button className="cancelbtn" onClick={cancelPost}>Cancel</button>
                     <div style={{display:'flex'}}>
-                        <button className="attachbtn" > <img src={AttachIcon} /> </button>
+                    
+                   
+                 
+                        <button type="file" className="attachbtn" 
+                            onClick={() => selectFiles({ accept: "image/*" }, 
+                                ({ name, size, source, file }) => {
+                                 console.log("Files Selected", { name, size, source, file });
+                                })}>
+                            <img src={AttachIcon} alt="AttachIcon"/> 
+                        </button>
+                     
+
                         &nbsp;&nbsp;&nbsp;
                         <div className="shrbtndiv">
                         <button className="postbtn" onClick={listPost}> <p>Share</p></button>
-                        <button className="dropbtn"><img src={Senddrop} /></button>
+                        <button className="dropbtn"><img src={Senddrop} alt="Senddrop" /></button>
 
                         </div>
                     </div>
@@ -73,7 +91,7 @@ const Postpage = () => {
                         &nbsp;&nbsp;&nbsp;
                         <div className="userreply">
                             <input style={{border:'none', width:'100%', background:'#FAFAFA'}} className="text" placeholder="|Write a comment.." />
-                            <button className="replybtn"> <img src={PostIcon} /> </button>
+                            <button className="replybtn"> <img src={PostIcon} alt="PostIcon" /> </button>
                         </div>
                         </div>
 

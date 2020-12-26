@@ -70,7 +70,7 @@ export default class Uifirst extends Component{
                                           <hr />
                                           <div className="subsmallsmry1" >
                                             <p>+7.8%</p>
-                                            <img src={Graph1} />
+                                            <img src={Graph1} alt="Graph1" />
                                           </div>
                                       </div>
 
@@ -79,7 +79,7 @@ export default class Uifirst extends Component{
                                           <hr />
                                           <div className="subsmallsmry1">
                                             <p>+67.4%</p>
-                                            <img src={Graph2} />
+                                            <img src={Graph2} alt="Graph2" />
                                           </div>
                                       </div>
                                 </div>
