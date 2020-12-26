@@ -1,0 +1,191 @@
+.postbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px 50px;
+}
+.inputdivbox{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 25vh;
+    width: 70%;
+}
+.innerinputbox{
+    /* background: #FAFAFA; */
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+
+}
+.inputpostbox{
+    height: 60px;
+    background: #FAFAFA;
+    border-radius: 15px;
+    border: none;
+    height: 100px;
+    outline: none !important;
+}
+.allbtndiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+}
+.attachbtn{
+    background: #FFC480;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none !important;
+    padding: 15px;
+    border: none;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.postbtn{
+    background: #FF6C40;
+    border-radius: 11px 0px 0px 11px;
+    cursor: pointer;
+    outline: none !important;
+    padding: 15px;
+    border: none;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.outerpost{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+.postbtn p{
+    
+    border-radius: 11px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2D8D5;
+
+}
+.cancelbtn{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none !important;
+    font-size: 17px;
+    line-height: 20px;
+    width: fit-content;
+    color: #EF3E36;
+
+}
+
+.postlist{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background: #FFFFFF;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.outerpostbox{
+    display: flex;
+    flex-direction: column;
+}
+.userposttimes{
+    display: flex;
+    /* justify-content: ; */
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.userposttimes h3{
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;   
+     margin: 0;
+}
+.tim{
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #868686;
+}
+.text {
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 20px;
+    outline:none !important;
+    color: #000000;
+}
+.userdet{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    text-align: justify;
+}
+
+.shrbtndiv{
+    display: flex;
+    flex-direction: row;
+}
+.dropbtn{
+    background: #FFC480;
+    border-radius: 0px 11px 11px 0px;
+    border: none;
+    padding: 10px;
+    outline: none !important;
+}
+.replydiv{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background: #FAFAFA;
+    padding: 10px;
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+}
+.replybtn{
+    background:none;
+    /* border-radius: 11px 0px 0px 11px; */
+    cursor: pointer;
+    outline: none !important;
+    padding: 15px;
+    border: none;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.replybtn img{
+    width: 20px;
+}
+
+.postlist1{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background: #FFFFFF;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px ;
+}
+.userreply{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

@@ -1,16 +1,17 @@
-// import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-// import Smallgraph from './components/smallgraph';
-// import Notepad from './components/notepad';
-import Uifirst from './components/uifirst';
+// import Uifirst from './components/uifirst';
+// import UISecond from './components/uisecond';
+import Routerpage from './router';
 
 function App() {
   return (
-    <div className="App">
-      <Uifirst />
-      {/* <Notepad /> */}
-      {/* <Smallgraph /> */}
-    </div>
+    <BrowserRouter>
+      <div className="App">
+          <Routerpage />
+      </div>
+    </BrowserRouter>
   );
 }
 

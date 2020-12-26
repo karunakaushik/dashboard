@@ -34,7 +34,7 @@ const Notepad = () => {
                         return <div className= "noteslist">Title &nbsp;<li>{notesval}</li> <br /></div>
                     })}
                 </div>
-                <div className="inputdivbox">
+                <div className="inputdivboxnote">
                 <label> Title </label>
                 <input className="inputbox" type="text" placeholder="add your next work list" value={inputlist} onChange={addNote} />
                 <button className="addbtn" onClick={listNote}> + </button>

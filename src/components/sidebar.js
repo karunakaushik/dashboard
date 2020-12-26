@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import Dashboard from './image/Shape.png';
 import Lorem from './image/Shape1.png';
 import Ipsum from './image/Shape2.png';
@@ -11,10 +12,10 @@ export default class Sidebar extends Component{
                     <img src={Dashboard} alt="Dashboard" /> Dashboard
                 </div>
                 <div className="sidebox1">
-                    <img src={Lorem} alt="Lorem" /> Lorem
+                    <img src={Lorem} alt="Lorem" />  <Link to="/uifirst" style={{textDecoration:'none', color:'white'}}>  Lorem</Link>
                 </div>
                 <div className="sidebox1">
-                    <img src={Ipsum} alt="Ipsum" /> Ipsum
+                    <img src={Ipsum} alt="Ipsum" /> <Link to="/uisecond" style={{textDecoration:'none', color:'white'}}> Ipsum</Link> 
                 </div>
             </div>
         )
