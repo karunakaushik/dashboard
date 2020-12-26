@@ -34,7 +34,7 @@ const Postpage = () => {
             <div className="postbox">
                 <div className="inputdivbox">
                 <div className="innerinputbox">
-                    <input className="inputpostbox" type="text" placeholder="Share something with your class.." value={inputlist} onChange={addPost} />
+                    <input className="inputpostbox" type="text" placeholder="Share something with your class.." value={inputlist} onChange={addPost} required />
                     <img src={files?.source} style={{width:'50px', height:'20px'}} alt="" />
 
                </div>

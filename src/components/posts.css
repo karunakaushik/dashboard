@@ -19,7 +19,7 @@
     /* background: #FAFAFA; */
     border-radius: 15px;
     display: flex;
-    padding: 20px;
+    padding: 10px 20px;
     flex-direction: column;
 
 }
@@ -57,7 +57,7 @@
     border-radius: 11px 0px 0px 11px;
     cursor: pointer;
     outline: none !important;
-    padding: 15px;
+    padding: 6px 45px;
     border: none;
     width: fit-content;
     display: flex;
