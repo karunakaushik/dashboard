@@ -9,8 +9,8 @@ function Routerpage() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route  path="/dashboard/uifirst" component={Uifirst} />
-        <Route exact path="/dashboard/uisecond" component={UISecond} />
+        <Route exact path="/dashboard" component={Uifirst} />
+        <Route  path="/dashboard/uisecond" component={UISecond} />
       </Switch>
     </BrowserRouter>
   );
