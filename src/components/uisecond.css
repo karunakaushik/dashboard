@@ -17,7 +17,9 @@
     overflow: auto;
     height: 100vh;
 }
-
+.showpreviousUi{
+    display: none;
+}
 @media only screen and (max-width: 700px) {
     .uisecondsidebarbox{
         display: none;
@@ -26,5 +28,8 @@
         padding: 15px 10px;
         width: auto;
         height: auto;
+    }
+    .showpreviousUi{
+        display: block;
     }
 }

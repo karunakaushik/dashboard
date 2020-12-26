@@ -157,6 +157,10 @@
     width: 60px;
     height: 50px;
 }
+
+.shownextUi{
+    display: none;
+}
 @media only screen and (max-width: 700px) {
     .sidecontainer{
         display: none;
@@ -211,5 +215,8 @@
     }
     .searchdiv{
         padding: 15px;
+    }
+    .shownextUi{
+        display: block;
     }
 }

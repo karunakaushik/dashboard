@@ -8,10 +8,11 @@ import Graph2 from './image/Path 44.png'
 import './uifirst.css'
 import Notepad from './notepad'
 import SmallGraphchart from './smallgraph'
+import { Link } from 'react-router-dom'
 export default class Uifirst extends Component{
     render(){
         return(
-
+            <React.Fragment>
             <div className="outercontUI">
                 <div className="sidecontainer">
                      <Sidebar />
@@ -99,6 +100,9 @@ export default class Uifirst extends Component{
                 </div>
                 
             </div>
+            <div className="shownextUi"> <Link to="/dashboard/uisecond" >Goto Next page</Link></div>
+            </React.Fragment>
+
         )
     }
 }
