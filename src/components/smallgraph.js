@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Line } from 'react-chartjs-2';
-
+import './uifirst.css'
 const data = {
   labels: ['26', '27', '28', '1', '2', '3', '4'],
   datasets: [
@@ -33,7 +33,7 @@ const data = {
 export default class SmallGraphchart extends Component {
   render() {
     return (
-      <div style={{display:'flex', flexDirection:'column', background:'white', boxShadow:'0px 0px 10px rgba(0, 0, 0, 0.05);', borderRadius:'25px'}}>
+      <div className="charddiv" style={{display:'flex', flexDirection:'column', background:'white', boxShadow:'0px 0px 10px rgba(0, 0, 0, 0.05);', borderRadius:'25px'}}>
         <Line ref="chart" data={data} />
         <p> February March</p>
       </div>

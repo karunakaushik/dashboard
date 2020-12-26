@@ -190,3 +190,21 @@
     width: 100%;
     justify-content: space-between;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .postbox{
+        padding: 0%;
+    }
+    .inputdivbox{
+        width: auto;
+        height: auto;
+    }
+    .allbtndiv{
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    .postlist, .postlist1, .replydiv{
+        width: auto;
+    }
+}
