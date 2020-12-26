@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+// import Smallgraph from './components/smallgraph';
 // import Notepad from './components/notepad';
 import Uifirst from './components/uifirst';
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Uifirst />
       {/* <Notepad /> */}
+      {/* <Smallgraph /> */}
     </div>
   );
 }

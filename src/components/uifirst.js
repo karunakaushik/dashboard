@@ -3,8 +3,11 @@ import Notice from './notification'
 import Sidebar from './sidebar'
 import Graphic from './image/Graphic.png'
 import Search from './image/search.png'
+import Graph1 from './image/Group 39.png'
+import Graph2 from './image/Path 44.png'
 import './uifirst.css'
 import Notepad from './notepad'
+import SmallGraphchart from './smallgraph'
 export default class Uifirst extends Component{
     render(){
         return(
@@ -14,7 +17,11 @@ export default class Uifirst extends Component{
                      <Sidebar />
                 </div>
                 <div className="outermaincontainer"> 
-                    <div><img src={Search} alt="search" /> Search</div>
+                    <div className="searchdiv">
+                        <div className="searchbox"> 
+                            <img src={Search} alt="search" />&nbsp; &nbsp; Search
+                        </div>    
+                    </div>
                 
                     <div className="maincontainer">
                         <div className="submaincontainer">
@@ -48,7 +55,35 @@ export default class Uifirst extends Component{
                                 <Notepad />
                             </div>
 
-                            <div className="lowergraphdetail" ></div>
+                            <div className="lowergraphdetail" >
+                                <div className="sublowergraphdetail1">
+                                    <SmallGraphchart />
+                                    <div className="inboxdiv">
+                                        <p>Inbox</p>
+                                       <h2>23</h2>
+                                    </div>
+
+                                </div>
+                                <div className="sublowergraphdetail2">
+                                      <div className="smallsmry1">
+                                          <p>This Month</p>
+                                          <hr />
+                                          <div className="subsmallsmry1" >
+                                            <p>+7.8%</p>
+                                            <img src={Graph1} />
+                                          </div>
+                                      </div>
+
+                                      <div className="smallsmry2">
+                                          <p>Last Month</p>
+                                          <hr />
+                                          <div className="subsmallsmry1">
+                                            <p>+67.4%</p>
+                                            <img src={Graph2} />
+                                          </div>
+                                      </div>
+                                </div>
+                            </div>
                         </div>
                         
                         </div>

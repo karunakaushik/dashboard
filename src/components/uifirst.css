@@ -23,6 +23,25 @@
     /* background: white; */
 
 }
+.searchdiv{
+    display: flex;
+    height: 7%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.searchbox{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    background: #E2E2E2;
+    border: 2px solid #E2E2E2;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
 .graphicdiv{
     display: flex;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
@@ -75,12 +94,64 @@
     display: flex;
 }
 .notecontainer{
-    /* width: 25%; */
+    width: 40%;
+    
 }
 .lowergraphdetail{
-    width: 75%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.inboxdiv{
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    display: flex;
+    background: white;
+    justify-content: space-around;
+}
+.inboxdiv p{
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+}
+
+.inboxdiv h2{
+    font-size: 40px;
+    line-height: 48px;
+    color: #593636;
 }
 .submaincontainer{
     display: flex;
     flex-direction: column;
+}
+.sublowergraphdetail1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sublowergraphdetail2{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.smallsmry1, .smallsmry2{
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.subsmallsmry1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.subsmallsmry1 p{
+    color:rgba(15, 38, 242, 1);
+    font-size: 25px;
+    line-height: 28px;
+}
+.subsmallsmry1 img{
+    width: 60px;
+    height: 50px;
 }
